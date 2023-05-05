@@ -21,6 +21,7 @@ jobs:
         target: 'desktop'
         arch: 'win32_mingw81'
         tools: 'tools_cmake,3.23.2,qt.tools.cmake tools_mingw,8.1.0,qt.tools.win32_mingw810 tools_ninja,1.10.2,qt.tools.ninja'
+        aqtversion: '==2.1.*'
         setup-python: 'true'
         install-deps: 'true'
         cache: 'true'
