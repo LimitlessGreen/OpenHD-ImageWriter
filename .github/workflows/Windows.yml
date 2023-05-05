@@ -33,7 +33,7 @@ jobs:
 
     - name: Configure CMake & Build
       run: |
-        #cmake -S src -B build -G "Ninja" -DCMAKE_BUILD_TYPE=Release
+        cmake -S src -B build -G "Ninja" -DCMAKE_BUILD_TYPE=Release
         cmake --build build -- -j2
         
     - name: Sign Installer
