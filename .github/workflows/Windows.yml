@@ -18,7 +18,7 @@ jobs:
         host: 'windows'
         target: 'desktop'
         arch: 'win32_mingw81'
-        tools: 'tools_cmake,qt.tools.cmake tools_mingw,qt.tools.win32_mingw810 tools_ninja,qt.tools.ninja tools_ifw tools_qtcreator,qt.tools.qtcreator'
+        tools: 'tools_cmake,qt.tools.cmake tools_openssl_x86 tools_mingw,qt.tools.win32_mingw810 tools_ninja,qt.tools.ninja tools_ifw tools_qtcreator,qt.tools.qtcreator'
         aqtversion: '==3.1.*'
         setup-python: 'true'
         install-deps: 'true'
@@ -28,7 +28,6 @@ jobs:
 
     - name: Install dependencies
       run: |
-        choco install -y openssl.light
         choco install -y nsis
 
     - name: Configure CMake & Build
