@@ -33,7 +33,7 @@ jobs:
     - name: Configure CMake & Build
       run: |
         tree ${{ github.workspace }}/qt
-        cmake -S src -B build -G "Ninja" -DCMAKE_BUILD_TYPE=Release
+        cmake -S src -B build -G "Ninja" -DCMAKE_BUILD_TYPE=Release -DOPENSSL_ROOT_DIR=${{ github.workspace }}/qt/
         cmake --build build -- -j2
         
     - name: Sign Installer
