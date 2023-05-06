@@ -28,7 +28,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        choco install -y nsis openssl
+        choco install -y nsis
 
     - name: Configure CMake & Build
       run: |
